@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var timeDataArray = [],
-    accXDataArray = [],    //HarmfulGas Data
-    accYDataArray = [];     //Co GasData
+    accXDataArray = [],    //Temperature Data
+    accYDataArray = [];     //Humidity Data
     //accZDataArray = [];     
   var data = {
     labels: timeDataArray,
