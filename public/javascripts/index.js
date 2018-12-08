@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var timeDataArray = [],
-    accXDataArray = [];    //HarmfulGas Data
+    accXDataArray = [],    //HarmfulGas Data
     accYDataArray = [];     //Co GasData
     //accZDataArray = [];     
   var data = {
