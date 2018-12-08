@@ -125,7 +125,7 @@ $(document).ready(function () {
 
     
       // ACC Y
-      if (obj.accY) {
+      if (obj.Humidity) {
         accYDataArray.push(obj.Humidity);    //humidityData
       }
       if (accYDataArray.length > maxLen) {
