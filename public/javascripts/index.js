@@ -1,8 +1,8 @@
 $(document).ready(function () {
   var timeDataArray = [],
     accXDataArray = [],    //Temperature Data
-    accYDataArray = [];     //Humidity Data
-    //accZDataArray = [];     
+    accYDataArray = [],    //Humidity Data
+    accZDataArray = [];     
   var data = {
     labels: timeDataArray,
     datasets: [
@@ -31,12 +31,12 @@ $(document).ready(function () {
         pointHoverBorderColor: "rgba(255, 204, 0, 1)",
         data: accYDataArray
       }
-    /* 
+    
         ,
       {
         fill: false,
-        label: 'accZ',
-        yAxisID: 'accZ',
+        label: 'Dust',
+        yAxisID: 'Dust',
         borderColor: "rgba(0, 0, 240, 1)",
         pointBoarderColor: "rgba(0, 0, 240, 1)",
         backgroundColor: "rgba(0, 0, 240, 0.4)",
@@ -44,7 +44,7 @@ $(document).ready(function () {
         pointHoverBorderColor: "rgba(0, 0, 240, 1)",
         data: accZDataArray
       }
-      */ 
+      
     ]
   }
 
@@ -74,17 +74,17 @@ $(document).ready(function () {
           },
           position: 'right'
         }
-        /*
+        
         , {
-          id: 'accZ',
+          id: 'Dust',
           type: 'linear',
           scaleLabel: {
-            labelString: 'AccZ(Z)',
+            labelString: 'Dust',
             display: true
           },
           position: 'right'
         }
-      */
+      
       ]
     }
   }
@@ -131,15 +131,15 @@ $(document).ready(function () {
       if (accYDataArray.length > maxLen) {
         accYDataArray.shift();
       }
-      /*
+      
       // ACC Z
-      if (obj.accZ) {
-        accYDataArray.push(obj.accZ);
+      if (obj.Dust) {
+        accYDataArray.push(obj.Dust);
       }
       if (accZDataArray.length > maxLen) {
         accZDataArray.shift();
       }
-      */
+      
       // LineChart Update
       myLineChart.update();
     } catch (err) {
