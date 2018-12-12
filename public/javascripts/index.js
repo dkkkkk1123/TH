@@ -37,11 +37,11 @@ $(document).ready(function () {
         fill: false,
         label: 'Dust',
         yAxisID: 'Dust',
-        borderColor: "rgba(0, 0, 240, 1)",
-        pointBoarderColor: "rgba(0, 0, 240, 1)",
-        backgroundColor: "rgba(0, 0, 240, 0.4)",
-        pointHoverBackgroundColor: "rgba(0, 0, 240, 1)",
-        pointHoverBorderColor: "rgba(0, 0, 240, 1)",
+        borderColor: "rgba(255, 0, 0, 1)",
+        pointBoarderColor: "rgba(255, 0, 0, 1)",
+        backgroundColor: "rgba(255, 0, 0, 0.4)",
+        pointHoverBackgroundColor: "rgba(255, 0, 0, 1)",
+        pointHoverBorderColor: "rgba(255, 0, 0, 1)",
         data: accZDataArray
       }
       
@@ -134,7 +134,7 @@ $(document).ready(function () {
       
       // ACC Z
       if (obj.Dust) {
-        accYDataArray.push(obj.Dust);
+        accZDataArray.push(obj.Dust);
       }
       if (accZDataArray.length > maxLen) {
         accZDataArray.shift();
